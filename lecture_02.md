@@ -367,7 +367,7 @@ class: middle,center
 ---
 # Erlang shell
 
-Erlang shell takes code as regular Erlang code except several keywords like `module` or `exports`.
+Erlang shell takes code as regular Erlang code except several keywords like `module` or `export`.
 Please try next code in your local Erlang shell (ignore strings after percent sign):
 
 ```erlang
@@ -379,7 +379,7 @@ Please try next code in your local Erlang shell (ignore strings after percent si
 ---
 # Erlang shell
 
-Erlang shell takes code as regular Erlang code except several keywords like `module` or `exports`.
+Erlang shell takes code as regular Erlang code except several keywords like `module` or `export`.
 Please try next code in your local Erlang shell (ignore strings after percent sign):
 
 ```erlang
@@ -488,7 +488,7 @@ Open your favourite Vim (sorry, bad joke) and create file `hello_world.erl`
 -export([hello/0]).
 
 hello() ->
-  io:format("Hello world!").
+  io:format("Hello world!~n").
 ```
 
 Now launch Erlang shell and enter:
