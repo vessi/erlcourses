@@ -316,6 +316,15 @@ You can use several sources to read Erlang documentation:
 * http://www.erlang.org/doc/
 * Dash Mac OS X application (https://kapeli.com/dash)
 ---
+# Erlang documentation
+
+You can use several sources to read Erlang documentation:
+
+* `erl -man module_name` - Erlang man pages
+* http://www.erlang.org/doc/
+* Dash Mac OS X application (https://kapeli.com/dash)
+* http://erldocs.com/
+---
 class: middle,center
 
 # Erlang shell itself
