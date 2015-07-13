@@ -285,7 +285,7 @@ class: center,top
 []
 2> [atom, 42, {tuple}, [list]]. % list with data
 [atom, 42, {tuple}, [list]]
-3> [H|T] = [1, 2, 3]. % usign pattern matching to extract head and tail of list
+3> [H | T] = [1, 2, 3]. % usign pattern matching to extract head and tail of list
 [1, 2, 3]
 4> H. % head of list
 1
