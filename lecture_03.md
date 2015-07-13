@@ -75,11 +75,15 @@ class: center,middle
 255
 4> 32#LOL. % number with base 32
 22293
-5> 32#lol. % numbers are case insentisive
+5> 32#lol. % numbers are case insensitive
 22293
-6> $Q. % character codes are numbers
+6> 36#100. % 36 is maximum base
+1296
+7> 37#100.
+* 1: illegal base '37'
+8> $Q. % character codes are numbers
 81
-7> $q. % they are case sentisive
+9> $q. % they are case sentisive
 113
 ```
 ---
@@ -211,7 +215,7 @@ class: center,top
 {42, 42, 42}
 2> {}. % empty tuple
 {}
-3> {atom, 42, {another_tuple}}
+3> {atom, 42, {another_tuple}}.
 {atom, 42, {another_tuple}}
 4> {name, Name} = {name, 'Joe'}. % extracting data by pattern matching
 {name, 'Joe'}
@@ -390,7 +394,7 @@ class: center,middle
 ```erlang-repl
 1> F1 = fun(X) -> X * 2 end.
 #Fun<erl_eval.6.90072148>
-2> F2 = fun hello_world:hello/0
+2> F2 = fun hello_world:hello/0.
 #Fun<hello_world.hello.0>
 3> F1(5).
 10
@@ -480,20 +484,20 @@ class: center,middle
 ## String
 
 * detected from list heuristically
-* concatenated if written adjacent (only for 2 adjacent strings)
+* concatenated if written adjacent
 ---
 # Pseudo-types
 ## String
 
 * detected from list heuristically
-* concatenated if written adjacent (only for 2 adjacent strings)
+* concatenated if written adjacent
 * operates as list in BEAM
 ---
 # Pseudo-types
 ## String
 
 * detected from list heuristically
-* concatenated if written adjacent (only for 2 adjacent strings)
+* concatenated if written adjacent
 * operates as list in BEAM
 
 ```erlang-repl
@@ -503,7 +507,7 @@ class: center,middle
 "hello" % was detected heuristically
 3> "he" "llo". % concatenation
 "hello"
-4> "he" ++ "llo" % joining lists
+4> "he" ++ "llo". % joining lists
 "hello"
 ```
 ---
