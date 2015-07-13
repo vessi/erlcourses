@@ -503,7 +503,7 @@ class: center,middle
 "hello" % was detected heuristically
 3> "he" "llo". % concatenation
 "hello"
-4> "he" ++ "llo" % joining lists
+4> "he" ++ "llo". % joining lists
 "hello"
 ```
 ---
