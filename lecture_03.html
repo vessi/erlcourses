@@ -15,17 +15,20 @@
       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
     </style>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
   </head>
   <body>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
     <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script src="/scripts/highlight.pack.js"></script>
     <script>
+      remark.highlighter.engine = hljs;
       var slideshow = remark.create(
         {
           sourceUrl: 'lecture_03.md',
           ratio: '16:9',
-          highlightStyle: 'monokai'
+          highlightStyle: 'github'
         }
       );
       MathJax.Hub.Config({
