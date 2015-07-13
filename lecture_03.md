@@ -75,7 +75,7 @@ class: center,middle
 255
 4> 32#LOL. % number with base 32
 22293
-5> 32#lol. % numbers are case insentisive
+5> 32#lol. % numbers are case insensitive
 22293
 6> $Q. % character codes are numbers
 81
