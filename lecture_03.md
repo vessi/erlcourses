@@ -211,7 +211,7 @@ class: center,top
 {42, 42, 42}
 2> {}. % empty tuple
 {}
-3> {atom, 42, {another_tuple}}
+3> {atom, 42, {another_tuple}}.
 {atom, 42, {another_tuple}}
 4> {name, Name} = {name, 'Joe'}. % extracting data by pattern matching
 {name, 'Joe'}
@@ -390,7 +390,7 @@ class: center,middle
 ```erlang-repl
 1> F1 = fun(X) -> X * 2 end.
 #Fun<erl_eval.6.90072148>
-2> F2 = fun hello_world:hello/0
+2> F2 = fun hello_world:hello/0.
 #Fun<hello_world.hello.0>
 3> F1(5).
 10
