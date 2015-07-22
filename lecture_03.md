@@ -7,7 +7,7 @@ class: center,middle
 class: center,middle
 
 # Erlang data types and primitives
-## Lecture 2.
+## Lecture 3.
 ---
 class: center,middle
 # Erlang types of data types
