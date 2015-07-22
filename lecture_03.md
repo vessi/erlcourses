@@ -7,7 +7,7 @@ class: center,middle
 class: center,middle
 
 # Erlang data types and primitives
-## Lecture 2.
+## Lecture 3.
 ---
 class: center,middle
 # Erlang types of data types
@@ -75,7 +75,7 @@ class: center,middle
 255
 4> 32#LOL. % number with base 32
 22293
-5> 32#lol. % numbers are case insentisive
+5> 32#lol. % numbers are case insensitive
 22293
 6> $Q. % character codes are numbers
 81
@@ -285,7 +285,7 @@ class: center,top
 []
 2> [atom, 42, {tuple}, [list]]. % list with data
 [atom, 42, {tuple}, [list]]
-3> [H|T] = [1, 2, 3]. % usign pattern matching to extract head and tail of list
+3> [H | T] = [1, 2, 3]. % usign pattern matching to extract head and tail of list
 [1, 2, 3]
 4> H. % head of list
 1
