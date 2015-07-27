@@ -191,26 +191,26 @@ How do processes communicate if they are isolated? They send messages! Each proc
 # Processes
 ## Messages
 
-How do processes communicate if they are isolated? They send messages! Each process has his own mailbox. Let's take a look.
+How do processes communicate if they are isolated? They send messages! Each process has its own mailbox. Let's take a look.
 
 On node 1:
 ```erlang-repl
-2> RemoteClient ! {hello, world}
+2> RemoteClient ! {hello, world}.
 {hello, world}
 ```
 ---
 # Processes
 ## Messages
 
-How do processes communicate if they are isolated? They send messages! Each process has his own mailbox. Let's take a look.
+How do processes communicate if they are isolated? They send messages! Each process has its own mailbox. Let's take a look.
 
 On node 1:
 ```erlang-repl
-2> RemoteClient ! {hello, world}
+2> RemoteClient ! {hello, world}.
 {hello, world}
 ```
 
-On node 2 take PID from i() output and:
+On node 2 take PID from `i().` output and:
 ```erlang-repl
 2> Pid = list_to_pid("<0.72.0>").
 <0.72.0>
@@ -230,7 +230,7 @@ class: center,middle
 # Processes
 ## Messages (receiving)
 
-So we need not only receive messages but also receive them. We can do it by tricky way like
+So we need not only receive messages but also fetch them. We can do it by tricky way like
 
 ```erlang
 Mailbox = process_info(self(), messages),
@@ -259,7 +259,7 @@ listen() ->
   end.
 ```
 
-This will create listen loop.
+This will create `listen` loop.
 
 *Special note*. Can you find more DRY way to do this?
 ---
@@ -273,7 +273,7 @@ Let's try spawn our process and send message to it.
 {ok, com_server}
 2> Pid = spawn(fun com_server:listen/0).
 <0.71.0>
-3> Pid ! "World"
+3> Pid ! "World".
 Hello, World
 ok
 ```
@@ -492,7 +492,7 @@ true
 ** exception error: "chain dies here"
 ```
 
-What happened here? `chain(3)` linked `chain(2)`, `chain(2)` linked `chain(1)`, `chain(1)` linked `chain(0)`. `chain(0)` received timeout and throwed exception. It was populated upper and upper because of link, so all chains died up to shell. Shell was restarted by supervisor.
+What happened here? `chain(3)` linked `chain(2)`, `chain(2)` linked `chain(1)`, `chain(1)` linked `chain(0)`. `chain(0)` received timeout and thrown exception. It was populated upper and upper because of link, so all chains died up to shell. Shell was restarted by supervisor.
 ---
 class: center,middle
 # End of Lecture 5
