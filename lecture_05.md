@@ -273,7 +273,7 @@ Let's try spawn our process and send message to it.
 {ok, com_server}
 2> Pid = spawn(fun com_server:listen/0).
 <0.71.0>
-3> Pid ! "World"
+3> Pid ! {hello, "World"}.
 Hello, World
 ok
 ```
