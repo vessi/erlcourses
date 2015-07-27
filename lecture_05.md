@@ -355,7 +355,7 @@ Let's take a look, how it works.
 1> c(selective).
 {ok,selective}
 2> self() ! {15, high}, self() ! {7, low}, self() ! {1, lowest}, self() ! {17, highest}.
-{17,high}
+{17,highest}
 3> process_info(self(), messages).
 {messages,[{15,high},{7,low},{1,lowest},{17,highest}]}
 4> selective:important().
