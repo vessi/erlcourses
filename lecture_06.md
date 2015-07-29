@@ -249,7 +249,7 @@ Now we are going to compile and test them.
 {ok,listener}
 3> Pid = listener:init().
 <0.99.0>
-4> Pid ! "Hello, World!"
+4> Pid ! "Hello, World!".
 Received message Hello, world!
 "Hello, world!"
 5> Pid ! terminate.
