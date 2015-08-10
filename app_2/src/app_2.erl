@@ -4,6 +4,6 @@
 -export([start/2, stop/1]).
 
 start(_Type, _Args) ->
-  app_2_sup:start_link(). % we need to launch top level supervisor here
+  app_2_sup:start_link().
 stop(_Stop) ->
   ok.
