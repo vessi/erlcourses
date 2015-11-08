@@ -17,7 +17,7 @@ EUnit is unit testing framework that builds on ideas from JUnit(Java) and SUnit(
 
 EUnit is unit testing framework that builds on ideas from JUnit(Java) and SUnit(Smalltalk). But EUnit was developed especially to be used in functional concurrent programming language. It is as laconic as Erlang is.
 
-EUnit was developed to be as less intrusive as developers can, so adding tests to your code will not change it. Anyway, if you plan to test only exported functions of module, you can place your tests separately - and it's widely used by application structure proposed by `rebar` build system.
+EUnit was developed to be least intrusive as it possibly can, so adding tests to your code will not change it. Anyway, if you plan to test only exported functions of module, you can place your tests separately - and it's widely used by application structure proposed by `rebar` build system.
 ---
 # EUnit
 ## EUnit glossary
@@ -88,7 +88,7 @@ EUnit was developed to be as less intrusive as developers can, so adding tests t
 * _Test Driven Development_ - methodology of development based on writing tests (as a future code specification) before your source code. Helps developer to avoid hyper-complication and ease refactoring.
 * _Mock object_ - fake object that behaves like real (maybe still not implemented or not available) object.
 * _Test case_ - single test that detects that something atomic works as expected. Test can only *pass* or *fail*.
-* _Test suite_ - collection of test cases joined together by specific target (e.g. single function or module). May be composed by other test suites.
+* _Test suite_ - collection of test cases joined together by specific target (e.g. single function or module). May be composed of other test suites.
 ---
 # EUnit
 ## Adding EUnit to your module
