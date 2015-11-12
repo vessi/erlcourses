@@ -404,7 +404,7 @@ class: center,middle
 
 * `==` - equal to
 * `/=` - not equal to
-* `=<` - less than
+* `=<` - less than or equal to
 ---
 # Comparison
 
