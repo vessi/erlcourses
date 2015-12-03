@@ -219,6 +219,20 @@ class: center,top
 'Joe'
 6> {name, Name2} = {name}. % mismatch will lead to exception
 ** exception error: no match of right hand side value {name}
+7> {atom1, Var1} = {atom1, "abc"}. 
+      % Since atoms are values by itself Erlang will only check if "atom1" matches with "atom2".
+      % In the same time "Var1" is unbound variable (link without value). So Erlang doesn't check for matching for this variable, 
+      % but only bounds value "abc" to variable "Var1".
+      % Result is valid tuple:
+{atom1,"abc"}.
+8> {atom1, Var1} = {atom1, "klm"}. 
+      % "Var1" has bounded value from previous operation, So Erlang checks for matching both elements: "atom1" and "Var1" 
+      % with corresponding values of right hand tuple. They don't match. Erlang raises exception: 
+** exception error: no match of right hand side value {atom1,"klm"}
+9> {atom1, Var1} = {atom2, "abc"}. 
+      % In other words operator " = " works for bounding values for unbound variables (or links),
+      % and for pattern matching of elements with values.
+** exception error: no match of right hand side value {atom2,"abc"}
 ```
 ---
 class: center,middle
