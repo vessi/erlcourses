@@ -480,20 +480,20 @@ class: center,middle
 ## String
 
 * detected from list heuristically
-* concatenated if written adjacent (only for 2 adjacent strings)
+* concatenated if written adjacent
 ---
 # Pseudo-types
 ## String
 
 * detected from list heuristically
-* concatenated if written adjacent (only for 2 adjacent strings)
+* concatenated if written adjacent
 * operates as list in BEAM
 ---
 # Pseudo-types
 ## String
 
 * detected from list heuristically
-* concatenated if written adjacent (only for 2 adjacent strings)
+* concatenated if written adjacent
 * operates as list in BEAM
 
 ```erlang-repl
